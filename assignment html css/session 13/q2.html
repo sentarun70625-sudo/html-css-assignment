@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamer Tag</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #111;
+            color: white;
+        }
+
+        .gamer-box {
+            width: 90%;
+            max-width: 700px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 40px 20px;
+            background: #222;
+            border-radius: 20px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        h1 {
+            margin: 15px 0 5px;
+        }
+
+        p {
+            color: #bbb;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .links a {
+            padding: 14px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .twitch {
+            background: #9146ff;
+        }
+
+        .discord {
+            background: #5865f2;
+        }
+
+        .steam {
+            background: #1b2838;
+        }
+
+
+        @media (max-width: 600px) {
+
+            .links {
+                flex-direction: column;
+            }
+
+            .links a {
+                width: 100%;
+            }
+
+            .gamer-box {
+                margin: 20px auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="gamer-box">
+
+        <img
+            class="avatar"
+            src="https://i.pravatar.cc/200"
+            alt="Gamer Avatar"
+        >
+
+        <h1>ShadowGamer</h1>
+
+        <p>
+            🎮 Gamer | FPS Player | Gaming Enthusiast
+        </p>
+
+
+        <div class="links">
+
+            <a
+                href="https://www.twitch.tv/"
+                target="_blank"
+                class="twitch"
+            >
+                Twitch
+            </a>
+
+            <a
+                href="https://discord.com/"
+                target="_blank"
+                class="discord"
+            >
+                Discord
+            </a>
+
+            <a
+                href="https://store.steampowered.com/"
+                target="_blank"
+                class="steam"
+            >
+                Steam
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

@@ -1,0 +1,185 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Links Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 30px;
+        }
+
+        .form-box {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .preview {
+            max-width: 700px;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 12px;
+            border: 3px solid;
+        }
+
+        .spotify {
+            border-color: #1db954;
+        }
+
+        .youtube {
+            border-color: red;
+        }
+
+        .apple {
+            border-color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>Music Links Form</h2>
+
+        <form id="musicLinksForm">
+
+            <input
+                type="url"
+                id="spotify"
+                placeholder="Spotify Profile URL"
+            >
+
+            <input
+                type="url"
+                id="youtube"
+                placeholder="YouTube Music Profile URL"
+            >
+
+            <input
+                type="url"
+                id="apple"
+                placeholder="Apple Music Profile URL"
+            >
+
+            <button type="submit">
+                Submit Links
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div id="preview" class="preview"></div>
+
+
+    <script>
+
+        document
+            .getElementById("musicLinksForm")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                let spotify =
+                    document.getElementById("spotify").value;
+
+                let youtube =
+                    document.getElementById("youtube").value;
+
+                let apple =
+                    document.getElementById("apple").value;
+
+                let preview =
+                    document.getElementById("preview");
+
+                preview.innerHTML = "";
+
+
+                if (spotify != "") {
+                    preview.innerHTML += `
+                        <div class="card spotify">
+                            <h3>Spotify</h3>
+                            <p>${spotify}</p>
+                            <a href="${spotify}" target="_blank">
+                                Visit
+                            </a>
+                        </div>
+                    `;
+                }
+
+
+                if (youtube != "") {
+                    preview.innerHTML += `
+                        <div class="card youtube">
+                            <h3>YouTube Music</h3>
+                            <p>${youtube}</p>
+                            <a href="${youtube}" target="_blank">
+                                Visit
+                            </a>
+                        </div>
+                    `;
+                }
+
+
+                if (apple != "") {
+                    preview.innerHTML += `
+                        <div class="card apple">
+                            <h3>Apple Music</h3>
+                            <p>${apple}</p>
+                            <a href="${apple}" target="_blank">
+                                Visit
+                            </a>
+                        </div>
+                    `;
+                }
+
+            });
+
+    </script>
+
+</body>
+</html>
+```
