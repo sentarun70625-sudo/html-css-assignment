@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Card</title>
+
+    <style>
+
+        .product-card {
+            width: 700px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+
+            display: flex;
+            flex-direction: row;
+
+            gap: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-card img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-details h1 {
+            font-size: 28px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: green;
+        }
+
+        .buy-button {
+            padding: 12px 25px;
+            background-color: orange;
+            border: none;
+        }
+
+        /* Mobile layout */
+        @media only screen and (max-width: 600px) {
+
+            .product-card {
+                width: 90%;
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product-details {
+                padding: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <img src="product.jpg" alt="Wireless Headphones">
+
+        <div class="product-details">
+
+            <h1>Wireless Bluetooth Headphones</h1>
+
+            <p>
+                High quality wireless headphones with clear sound
+                and comfortable design.
+            </p>
+
+            <p class="price">₹1,499</p>
+
+            <button class="buy-button">Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

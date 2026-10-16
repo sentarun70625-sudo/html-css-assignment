@@ -1,0 +1,141 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Card</title>
+
+    <style>
+
+        .product-card {
+            width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+
+            display: flex;
+            flex-direction: row;
+
+            gap: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-card img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-details h1 {
+            font-size: 28px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: green;
+        }
+
+        .buy-button {
+            padding: 12px 25px;
+            background-color: orange;
+            border: none;
+        }
+
+
+        /* Breakpoint 1200px */
+        @media only screen and (max-width: 1200px) {
+
+            .product-card {
+                padding: 25px;
+            }
+
+            .product-details h1 {
+                font-size: 26px;
+            }
+
+        }
+
+
+        /* Breakpoint 900px */
+        @media only screen and (max-width: 900px) {
+
+            .product-card {
+                width: 85%;
+                padding: 20px;
+            }
+
+            .product-details {
+                padding: 15px;
+            }
+
+            .product-details h1 {
+                font-size: 24px;
+            }
+
+        }
+
+
+        /* Breakpoint 600px */
+        @media only screen and (max-width: 600px) {
+
+            .product-card {
+                width: 90%;
+                padding: 15px;
+                flex-direction: column;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product-details {
+                padding: 10px;
+            }
+
+            .product-details h1 {
+                font-size: 20px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <img src="product.jpg" alt="Wireless Headphones">
+
+        <div class="product-details">
+
+            <h1>Wireless Bluetooth Headphones</h1>
+
+            <p>
+                High quality wireless headphones with clear sound,
+                comfortable design and long battery life.
+            </p>
+
+            <p class="price">₹1,499</p>
+
+            <button class="buy-button">Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

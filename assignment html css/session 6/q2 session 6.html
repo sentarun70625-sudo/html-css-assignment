@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Tile</title>
+
+    <style>
+        .product-tile {
+            border: 1px solid gray;
+            padding: 20px;
+            width: 250px;
+        }
+
+        .product-image {
+            display: block;
+            width: 200px;
+        }
+
+        .product-name {
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .price {
+            display: inline-block;
+            color: green;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        /* When the hidden-price class is added, the price disappears */
+        .hidden-price {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="product-tile">
+
+        <img src="headphones.jpg"
+             alt="Wireless Headphones"
+             class="product-image">
+
+        <span class="product-name">
+            Wireless Headphones
+        </span>
+
+        <span class="price">
+            rs1,499
+        </span>
+
+    </div>
+
+    <br>
+
+    <div class="product-tile">
+
+        <img src="headphones.jpg"
+             alt="Wireless Headphones"
+             class="product-image">
+
+        <span class="product-name">
+            Hidden Price Product
+        </span>
+
+        <span class="price hidden-price">
+            1,499
+        </span>
+
+    </div>
+
+</body>
+</html>
+```

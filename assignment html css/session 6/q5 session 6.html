@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reusable CSS Class</title>
+
+    <style>
+
+        /*
+        The reusable spacing class avoids writing the same
+        margin and padding values again and again.
+        This makes the CSS easier to maintain and update.
+        */
+
+        .common-spacing {
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .restaurant-card {
+            border: 2px solid #e23744;
+            width: 300px;
+        }
+
+        .product-card {
+            border: 2px solid gray;
+            width: 300px;
+        }
+
+        .movie-card {
+            border: 2px solid black;
+            width: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="restaurant-card common-spacing">
+
+        <h2>Spice Garden</h2>
+
+        <p>Indian and Gujarati Cuisine</p>
+
+        <p>Rating: 4.5/5</p>
+
+    </div>
+
+    <div class="product-card common-spacing">
+
+        <h2>Wireless Headphones</h2>
+
+        <p>Price: ₹1,499</p>
+
+    </div>
+
+    <div class="movie-card common-spacing">
+
+        <h2>Movie Poster</h2>
+
+        <p>Rating: 4.5/5</p>
+
+    </div>
+
+</body>
+</html>
+```
